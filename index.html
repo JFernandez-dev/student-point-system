@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Point System</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; max-width: 600px; margin: auto; }
+    input, select, button { margin: 5px 0; width: 100%; padding: 10px; }
+    .student { border: 1px solid #ccc; padding: 10px; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h2>Student Point System</h2>
+
+  <input type="text" id="name" placeholder="Student Name" />
+  <input type="text" id="grade" placeholder="Grade" />
+
+  <select id="reason">
+    <option>Helped a classmate</option>
+    <option>Turned in homework early</option>
+    <option>Disrupted class</option>
+    <option>Was respectful</option>
+    <option>Came late to class</option>
+  </select>
+
+  <input type="number" id="points" placeholder="Points (positive or negative)" />
+  <input type="text" id="staff" placeholder="Staff Name" />
+  <input type="password" id="password" placeholder="Staff Password" />
+
+  <button onclick="addPoints()">Submit</button>
+
+  <h3>Students</h3>
+  <div id="students"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
